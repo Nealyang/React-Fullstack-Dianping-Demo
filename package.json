@@ -6,10 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Nealyang/React-Fullstack-Dianping-Demo.git"
-  },
+  "repository": "git+https://github.com/Nealyang/React-Fullstack-Dianping-Demo.git",
   "keywords": [
     "React",
     "react-router",
@@ -21,5 +18,11 @@
   "bugs": {
     "url": "https://github.com/Nealyang/React-Fullstack-Dianping-Demo/issues"
   },
-  "homepage": "https://github.com/Nealyang/React-Fullstack-Dianping-Demo#readme"
+  "homepage": "https://github.com/Nealyang/React-Fullstack-Dianping-Demo#readme",
+  "dependencies": {
+    "react": "^15.6.1"
+  },
+  "devDependencies": {
+    "webpack": "^3.5.5"
+  }
 }
