@@ -1,22 +1,22 @@
-import React,{Component} from 'react'
-import style from './test.css'
+import React from 'react'
 import {render} from 'react-dom'
-import test from './test.jpg'
-
- class App extends Component{
-    render(){
-        return(
-            <div>
-                <p className={style.test}>hello world!</p>
-                <img src={test} alt="me"/>
-            </div>
-        )
-    }
-}
-
+import BasicExample from './BasicExample'
+import {AppContainer} from 'react-hot-loader'
 
 let div = document.createElement('div');
-div.setAttribute('id','app');
+div.setAttribute('id', 'app');
 document.body.appendChild(div);
 
-render(<App/>,document.getElementById('app'));
+const mountNode = document.getElementById('app');
+
+
+render(
+    <AppContainer>
+        <BasicExample/>
+    </AppContainer>,
+    mountNode
+);
+
+if (module.hot && process.env.NODE_ENV !== 'production') {
+    module.hot.accept();
+}
