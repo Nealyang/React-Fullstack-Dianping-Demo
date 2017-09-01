@@ -1,0 +1,5 @@
+.test{
+    color: red;
+    transition: width 2s;
+    background: url("./test.jpg");
+}
