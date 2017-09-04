@@ -65,6 +65,9 @@ module.exports = {
     },
     plugins: [
         new CleanPlugin(['build']),
+        new webpack.DefinePlugin({
+           "progress.env.NODE_ENV":JSON.stringify('development')
+        }),
         new HtmlWebpackPlugin({
             title: "My app",
             showErrors: true,
@@ -85,6 +88,7 @@ module.exports = {
         }),
         new webpack.optimize.CommonsChunkPlugin({
             name: "common",
+            minChunks: Infinity
         })
     ],
     resolve: {
