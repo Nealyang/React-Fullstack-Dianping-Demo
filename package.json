@@ -4,7 +4,10 @@
   "description": "react.fullstack.dianping.demo",
   "main": "index.js",
   "scripts": {
-    "test": "webpack --config ./webpack.config.dev.js --progress --profile --colors"
+    "watch-client": "webpack --config ./webpack.config.dev.js --progress --profile --colors",
+    "start-dev-server": "nodemon --watch web web/index.js",
+    "dev": "npm run watch-client & npm run start-dev-server ",
+    "start": "npm run dev"
   },
   "repository": "git+https://github.com/Nealyang/React-Fullstack-Dianping-Demo.git",
   "keywords": [
@@ -41,6 +44,7 @@
     "babel-register": "^6.26.0",
     "babel-runtime": "^6.26.0",
     "clean-webpack-plugin": "^0.1.16",
+    "concurrently": "^3.5.0",
     "connect-history-api-fallback": "^1.3.0",
     "cross-env": "^5.0.5",
     "css-loader": "^0.28.7",
@@ -49,6 +53,7 @@
     "html-webpack-plugin": "^2.30.1",
     "node-loader": "^0.6.0",
     "node-sass": "^4.5.3",
+    "nodemon": "^1.11.0",
     "open-browser-webpack-plugin": "^0.0.5",
     "postcss-loader": "^2.0.6",
     "react-hot-loader": "^3.0.0-beta.6",
