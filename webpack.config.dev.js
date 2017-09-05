@@ -4,6 +4,8 @@ const webpack = require('webpack');
 const OpenBrowser = require('open-browser-webpack-plugin');
 const ExtractText = require('extract-text-webpack-plugin');
 const CleanPlugin = require('clean-webpack-plugin');
+const ProgressBarPlugin = require('progress-bar-webpack-plugin');
+const config = require('./config/config');
 module.exports = {
     entry: {
         index: [
@@ -16,10 +18,9 @@ module.exports = {
     output: {
         path: pathLib.resolve(__dirname, 'build'),
         publicPath: "/",
-        chunkFilename: 'chunk.[id].[hash:8].js',
         filename: '[name].[hash:8].js'
     },
-    devtool:'source-map',
+    devtool:'eval-source-map',
     module: {
         rules: [
             {
@@ -65,6 +66,8 @@ module.exports = {
     },
     plugins: [
         new CleanPlugin(['build']),
+        new ProgressBarPlugin(),
+        new webpack.optimize.AggressiveMergingPlugin(),
         new webpack.DefinePlugin({
            "progress.env.NODE_ENV":JSON.stringify('development')
         }),
@@ -79,7 +82,8 @@ module.exports = {
             disable:false,
             allChunks:true
         }),
-        new OpenBrowser({url:'http://localhost:3000'}),
+        new OpenBrowser({url:`http://${config.hotReloadHost}:${config.hotReloadPort}`}),
+        new webpack.HashedModuleIdsPlugin(),
         new webpack.optimize.CommonsChunkPlugin({
             name: 'vendor',
             minChunks: function (module) {
@@ -87,8 +91,7 @@ module.exports = {
             }
         }),
         new webpack.optimize.CommonsChunkPlugin({
-            name: "common",
-            minChunks: Infinity
+            name: "manifest"
         })
     ],
     resolve: {

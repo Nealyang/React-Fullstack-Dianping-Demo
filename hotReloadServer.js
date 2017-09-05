@@ -1,5 +1,6 @@
 const express = require('express');
 const pathLib = require('path');
+const config = require('./config/config');
 let app = express();
 
 app.use('/',require('connect-history-api-fallback')());
@@ -7,7 +8,7 @@ app.use('/',express.static(pathLib.resolve(__dirname,'..','build')));
 
 if(process.env.NODE_ENV !== 'production'){//开发环境下
     const webpack = require('webpack');
-    const webpackConfig = require('../webpack.config.dev');
+    const webpackConfig = require('./webpack.config.dev');
     const webpackCompiled = webpack(webpackConfig);
 
     //配置运行时打包
@@ -27,7 +28,7 @@ if(process.env.NODE_ENV !== 'production'){//开发环境下
     app.use(webpackHotMiddleware(webpackCompiled));
 }
 
-const server = app.listen(3000,function () {
+const server = app.listen(config.hotReloadPort,function () {
     let port = server.address().port;
-    console.log('Open http://localhost:%s', port);
+    console.log(`Open http://${config.hotReloadHost}:%s`, port);
 });
