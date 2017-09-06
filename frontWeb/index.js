@@ -1,6 +1,6 @@
 import React from 'react'
 import {render} from 'react-dom'
-import BasicExample from './BasicExample'
+import {view as DianpingApp} from './components/wrap/index'
 import {AppContainer} from 'react-hot-loader'
 
 let div = document.createElement('div');
@@ -12,7 +12,7 @@ const mountNode = document.getElementById('app');
 
 render(
     <AppContainer>
-        <BasicExample/>
+        <DianpingApp/>
     </AppContainer>,
     mountNode
 );

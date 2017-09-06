@@ -4,5 +4,5 @@ module.exports = {
     apiHost:process.env.APIHOST || 'localhost',
     apiPort:process.env.APIPORT || '3030',
     hotReloadHost:'localhost',
-    hotReloadPort:'8000'
+    hotReloadPort:'8000',
 };

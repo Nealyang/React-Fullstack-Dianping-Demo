@@ -28,10 +28,13 @@
   "dependencies": {
     "express": "^4.15.4",
     "react": "^15.6.1",
+    "react-addons-perf": "^15.4.2",
+    "react-addons-pure-render-mixin": "^15.6.0",
     "react-dom": "^15.6.1",
     "react-redux": "^5.0.6",
     "react-router-dom": "^4.2.2",
-    "redux": "^3.7.2"
+    "redux": "^3.7.2",
+    "redux-immutable-state-invariant": "^2.0.0"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.3",

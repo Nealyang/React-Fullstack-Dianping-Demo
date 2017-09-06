@@ -11,7 +11,7 @@ module.exports = {
         index: [
             'react-hot-loader/patch',
             'webpack-hot-middleware/client',
-            pathLib.resolve(__dirname, 'app', 'index.js')
+            pathLib.resolve(__dirname, 'frontWeb', 'index.js')
         ],
         vendor: ['react','react-dom','react-router-dom']
     },
