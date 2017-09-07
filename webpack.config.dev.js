@@ -10,8 +10,8 @@ module.exports = {
     entry: {
         index: [
             'react-hot-loader/patch',
-            'webpack-hot-middleware/client',
-            pathLib.resolve(__dirname, 'frontWeb', 'index.js')
+            'webpack-hot-middleware/client?path=http://localhost:8000/__webpack_hmr',
+            pathLib.resolve(__dirname,'frontWeb', 'index.js')
         ],
         vendor: ['react','react-dom','react-router-dom']
     },

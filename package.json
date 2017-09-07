@@ -6,7 +6,7 @@
   "scripts": {
     "build-client:dev": "webpack --config ./webpack.config.dev.js --progress --profile --colors",
     "build-client:prod": "webpack --config ./webpack.config.prod.js --progress --profile --colors",
-    "start-hot-server": "node hotReloadServer.js",
+    "start-hot-server": "node  ./hotReloadServer.js",
     "dev": "npm run build-client:dev & npm run start-hot-server ",
     "prod": "npm run build-client:prod",
     "start": "npm run dev",
@@ -33,8 +33,10 @@
     "react-dom": "^15.6.1",
     "react-redux": "^5.0.6",
     "react-router-dom": "^4.2.2",
+    "react-swipe": "^5.0.8",
     "redux": "^3.7.2",
-    "redux-immutable-state-invariant": "^2.0.0"
+    "redux-immutable-state-invariant": "^2.0.0",
+    "swipe-js-iso": "^2.0.4"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.3",

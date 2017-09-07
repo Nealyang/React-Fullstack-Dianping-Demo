@@ -13,13 +13,17 @@ import {view as NotFound} from '../../notFound/index'
 import {view as Search} from '../../search/index'
 import {view as User} from '../../user/index'
 import PureRenderMixin from 'react-addons-pure-render-mixin'
+import {bindActionCreators} from 'redux'
+import {connect} from 'react-redux'
+import {updateUserInfo} from '../actions'
+import './reset.css'
 
-export default class DianpingApp extends Component {
+class DianpingApp extends Component {
     constructor(props) {
         super(props);
-        this.shouldComponentUpdate=PureRenderMixin.shouldComponentUpdate.bind(this);
-        this.state={
-            isLoading:false
+        this.shouldComponentUpdate = PureRenderMixin.shouldComponentUpdate.bind(this);
+        this.state = {
+            isLoading: false
         }
     }
 
@@ -27,21 +31,38 @@ export default class DianpingApp extends Component {
         return (
             <Router>
                 <div>
-                    <h1>hello world</h1>
-                    {
-                        this.state.isLoading?<h1>加载中。。。</h1>:
-                            <Switch>
-                                <Route exact path='/' component={Home}/>
-                                <Route path='/detail' component={Detail}/>
-                                <Route path='/city' component={City}/>
-                                <Route path='/search' component={Search}/>
-                                <Route path='/user' component={User}/>
-                                <Route component={NotFound}/>
-                            </Switch>
-
-                    }
+                    <Switch>
+                        <Route exact path='/' component={Home}/>
+                        <Route path='/detail' component={Detail}/>
+                        <Route path='/city' component={City}/>
+                        <Route path='/search' component={Search}/>
+                        <Route path='/user' component={User}/>
+                        <Route component={NotFound}/>
+                    </Switch>
                 </div>
             </Router>
         )
     }
+
+    componentDidMount() {
+        this.props.updateUserInfo({
+            cityName: '北京',
+            isLoading: true
+        })
+    }
 }
+
+function mapStateToProps(state) {
+    return {}
+}
+
+function mapDispatchToProps(dispatch) {
+    return {
+        updateUserInfo: bindActionCreators(updateUserInfo, dispatch)
+    }
+}
+
+export default connect(
+    mapStateToProps,
+    mapDispatchToProps
+)(DianpingApp)

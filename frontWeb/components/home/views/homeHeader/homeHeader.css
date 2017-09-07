@@ -1,0 +1,36 @@
+.homeHeaderContainer{
+    background: #f2384d;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100px;
+    align-items: center;
+    font-size:2.5rem;
+    color: #fff;
+    padding:1rem;
+}
+.arrowDown{
+    width: 3.5rem;
+    height: auto;
+}
+.searchDiv{
+    background: #fff;
+    height: 80px;
+    width: 60%;
+    border-radius: 50px;
+    padding-left: 1rem;
+    display: flex;
+    align-items: center;
+}
+.searchIcon{
+    width: 4rem;
+    height: auto;
+}
+.searchInput{
+    border: none;
+    height: 100%;
+}
+
+.userIcon{
+    width: 3.5rem;
+}
