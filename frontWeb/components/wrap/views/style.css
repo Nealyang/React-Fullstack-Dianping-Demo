@@ -1,0 +1,13 @@
+.loadingContainer{
+    position: absolute;
+    z-index: 33;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.imgIcon{
+    /*width: 60px;*/
+    /*height: auto;*/
+}

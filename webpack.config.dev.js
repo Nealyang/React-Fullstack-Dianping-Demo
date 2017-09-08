@@ -9,6 +9,7 @@ const config = require('./config/config');
 module.exports = {
     entry: {
         index: [
+            'babel-polyfill',
             'react-hot-loader/patch',
             'webpack-hot-middleware/client?path=http://localhost:8000/__webpack_hmr',
             pathLib.resolve(__dirname,'frontWeb', 'index.js')

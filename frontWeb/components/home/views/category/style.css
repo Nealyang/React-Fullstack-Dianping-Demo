@@ -5,10 +5,6 @@
     background: #fff;
 }
 .singleCategory{
-    /*height: 370px;*/
-    /*background: red;*/
-    /*width: 100%;*/
-    /*display: inline-block;*/
     font-size: 4rem;
     display: flex;
     flex-direction: row;
@@ -22,15 +18,6 @@
     justify-content: center;
     flex-direction: column;
     margin-top: 40px;
-}
-.imgWrap{
-    background: #eee;
-    width: 7rem;
-    height: 7rem;
-    border-radius: 100%;
-    display: flex;
-    justify-content: center;
-    align-items:center;
 }
 .img{
     width: 6rem;
@@ -48,17 +35,17 @@
 }
 .spanOn{
     display: inline-block;
-    background: #f0394f;
-    width: 30px;
-    height: 30px;
+    background: #f5734b;
+    width: 20px;
+    height: 20px;
     border-radius: 100%;
     margin:0 10px;
 }
 .spanOff{
     display: inline-block;
-    background: #eee;
-    width: 30px;
-    height: 30px;
+    background: #ccc;
+    width: 20px;
+    height: 20px;
     border-radius: 100%;
     margin:0 10px;
 }

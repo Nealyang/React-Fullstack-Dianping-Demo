@@ -1,12 +1,16 @@
 const express = require('express');
 const pathLib = require('path');
 const config = require('./config/config');
+const resData = require('./serverData/resData');
 let app = express();
 
 app.use('/',require('connect-history-api-fallback')());
 app.use('/',express.static(pathLib.resolve(__dirname,'..','build')));
-app.get('/api',function (req,res) {
-    res.send('1232')
+/**
+ * 获取广告数据
+ */
+app.get('/api/getAdData',function (req,res) {
+    res.status(200).send(resData.adData);
 });
 
 if(process.env.NODE_ENV !== 'production'){//开发环境下

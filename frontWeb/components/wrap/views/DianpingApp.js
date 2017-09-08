@@ -17,20 +17,25 @@ import {bindActionCreators} from 'redux'
 import {connect} from 'react-redux'
 import {updateUserInfo} from '../actions'
 import './reset.css'
+import style from './style.css'
 
 class DianpingApp extends Component {
     constructor(props) {
         super(props);
         this.shouldComponentUpdate = PureRenderMixin.shouldComponentUpdate.bind(this);
-        this.state = {
-            isLoading: false
-        }
     }
 
     render() {
         return (
             <Router>
                 <div>
+                    {
+                        this.props.isLoading ?
+                            <div className={style.loadingContainer}>
+                                <img className={style.imgIcon} src='https://www.dpfile.com/app/app-m-module/static/6261145dd7c0f26bc0a26831e5cb358a.gif'/>
+                            </div>
+                            :null
+                    }
                     <Switch>
                         <Route exact path='/' component={Home}/>
                         <Route path='/detail' component={Detail}/>
@@ -39,6 +44,7 @@ class DianpingApp extends Component {
                         <Route path='/user' component={User}/>
                         <Route component={NotFound}/>
                     </Switch>
+
                 </div>
             </Router>
         )
@@ -53,7 +59,9 @@ class DianpingApp extends Component {
 }
 
 function mapStateToProps(state) {
-    return {}
+    return {
+        isLoading: state.wrap.fetchState === 'start'
+    }
 }
 
 function mapDispatchToProps(dispatch) {

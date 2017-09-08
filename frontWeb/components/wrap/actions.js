@@ -6,3 +6,15 @@ export function updateUserInfo(data) {
         data
     }
 }
+
+export function startFetch() {
+    return{
+        type:ActionTypes.START_FETCH
+    }
+}
+
+export function fetchError() {
+    return{
+        type:ActionTypes.FETCH_ERROR
+    }
+}

@@ -8,6 +8,7 @@ import {reducer as search } from './components/search'
 import {reducer as user } from './components/user'
 
 export default combineReducers({
-    userInfo:wrap,
+    wrap,
+    home
 });
 
