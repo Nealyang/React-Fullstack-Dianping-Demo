@@ -1,0 +1,11 @@
+.container{
+    background: #fff;
+    font-size: 2.3rem;
+    padding: 15px;
+}
+.totalTag{
+    color: #c3c3c3;
+    font-size: 1.8rem;
+    display: inline-block;
+    margin-bottom: 20px;
+}

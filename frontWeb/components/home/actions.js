@@ -6,3 +6,10 @@ export function getAd(url) {
         url
     }
 }
+
+export function getLike(url) {
+    return{
+        type:actionTypes.GET_U_LIKE,
+        url
+    }
+}

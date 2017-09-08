@@ -12,6 +12,9 @@ app.use('/',express.static(pathLib.resolve(__dirname,'..','build')));
 app.get('/api/getAdData',function (req,res) {
     res.status(200).send(resData.adData);
 });
+app.get('/api/getULikeData',function (req,res) {
+    res.status(200).send(resData.guessULike);
+});
 
 if(process.env.NODE_ENV !== 'production'){//开发环境下
     const webpack = require('webpack');

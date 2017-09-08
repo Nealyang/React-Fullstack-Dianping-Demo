@@ -1,0 +1,125 @@
+.header{
+    background: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 2.1rem;
+    height: 90px;
+}
+.title{
+    color: #ff5e58;
+    font-weight: bolder;
+    font-size: 2.9rem;
+}
+.more{
+    color: #bbb;
+}
+
+.cellContainer{
+    background: #fff;
+    width: 32.5%;
+    padding-right: .5%;
+}
+.cellImg{
+    width: 95%;
+}
+.cellName{
+    font-size: 2.3rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.tag::before,.price::before{
+    content:'￥';
+    
+}
+.price{
+    color: #ff7658;
+    font-size: 2rem;
+}
+.tag{
+    color: #bbb;
+    font-size: 2rem;
+    text-decoration: line-through;
+    display: inline-block;
+    margin-left: 10px;
+}
+.type2tag{
+    color: #ff7658;
+    font-size: 1.5rem;
+    display: inline-block;
+    padding:1px 10px;
+    border:solid thin #ff7658;
+    margin-left: 10px;
+}
+
+.listCellContainer{
+    background: #fff;
+    display: flex;
+    flex-direction: row;
+    padding:20px 0;
+    margin-bottom: 2px;
+    border-bottom: solid 2px #eee;
+}
+.listCellRightDiv{
+    width: 68%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.listCellLeftDiv{
+    width: 30%;
+}
+.listCellImgStyle{
+    height: 250px;
+    width: auto;
+    margin-right: 20px;
+}
+.listCellName{
+    font-weight: bolder;
+    font-size: 2.8rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.listCellDesc{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-weight: 200;
+    color: #bbb;
+    font-size: 2.2rem;
+}
+.listCellBottomDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.listCellPrice{
+    color: #ff6633;
+    font-size: 3rem;
+    font-weight: bolder;
+}
+.listCellExPrice{
+    color: #c5c5c5;
+    font-size: 2.1rem;
+    display: inline-block;
+    margin-left: 15px;
+    text-decoration: line-through;
+}
+.listCellPrice::before,.listCellExPrice::before{
+    content:'￥'
+}
+.hasSolied{
+    color: #c5c5c5;
+    font-size: 2.1rem;
+    font-weight: 200;
+}
+.loadMoreContainer{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    height: 80px;
+    color: #bdbaba;
+}

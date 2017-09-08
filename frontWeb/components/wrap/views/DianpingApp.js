@@ -52,8 +52,7 @@ class DianpingApp extends Component {
 
     componentDidMount() {
         this.props.updateUserInfo({
-            cityName: '北京',
-            isLoading: true
+            cityName: '北京'
         })
     }
 }

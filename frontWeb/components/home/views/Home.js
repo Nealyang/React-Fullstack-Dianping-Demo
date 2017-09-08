@@ -3,35 +3,57 @@ import HomeHeader from "./homeHeader/HomeHeader";
 import {connect} from 'react-redux'
 import Category from "./category/Category";
 import style from './style.css'
-import axios from 'axios'
-import {getAd} from '../actions'
+import {getAd,getLike} from '../actions'
 import {bindActionCreators} from 'redux'
+import Ad from "./ad/Ad";
+import CheapOrReducers from "./cheapOrReducers/CheapOrReducers";
+import GuessULike from "./guessULike/GuessULike";
 
 class Home extends Component {
     constructor(props) {
-        super(props)
+        super(props);
+        this.loadMore = this.loadMore.bind(this)
     }
 
     render() {
-        const {userInfo} = this.props;
+        const {userInfo,ad,cheap,reduces,guessULike,isLoading} = this.props;
         return (
             <div className={style.home}>
                 <HomeHeader cityName={userInfo.cityName}/>
                 <Category/>
+                <div style={{marginTop:'20px'}}/>
+                <Ad ads={ad}/>
+                <CheapOrReducers data={cheap} type={1}/>
+                <CheapOrReducers data={reduces} type={2}/>
+                <GuessULike loadMore={this.loadMore} isLoading={isLoading} data={guessULike}/>
             </div>
         )
     }
 
     componentDidMount() {
         this.props.getAdData('/api/getAdData');
+        this.props.getULikeData('/api/getULikeData');
+    }
+    loadMore(){
+        this.props.getULikeData('/api/getULikeData');
     }
 }
+Home.defaultProps={
+    userInfo: {},
+    ad:[],
+    cheap:[],
+    reduces:[],
+    guessULike:[],
+    isLoading:false
+};
 
 Home.propTypes = {
     userInfo: PropTypes.object.isRequired,
     ad:PropTypes.arrayOf(PropTypes.object.isRequired),
     cheap:PropTypes.arrayOf(PropTypes.object.isRequired),
-    reduce:PropTypes.arrayOf(PropTypes.object.isRequired)
+    reduces:PropTypes.arrayOf(PropTypes.object.isRequired),
+    guessULike:PropTypes.arrayOf(PropTypes.object.isRequired),
+    isLoading:PropTypes.bool.isRequired
 };
 
 function mapStateToProps(state) {
@@ -39,13 +61,16 @@ function mapStateToProps(state) {
         userInfo: state.wrap.userInfo,
         ad:state.home.adData.ad,
         cheap:state.home.adData.cheap,
-        reduce:state.home.adData.reduce
+        reduces:state.home.adData.reduces,
+        guessULike:state.home.guessULike,
+        isLoading:state.wrap.fetchState==='start'
     }
 }
 
 function mapDispatchToProps(dispatch) {
     return {
-        getAdData: bindActionCreators(getAd,dispatch)
+        getAdData: bindActionCreators(getAd,dispatch),
+        getULikeData:bindActionCreators(getLike,dispatch)
     }
 }
 

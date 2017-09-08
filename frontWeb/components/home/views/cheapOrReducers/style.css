@@ -1,0 +1,9 @@
+.container{
+    background-color: #fff;
+    padding:0 10px 30px;
+    margin-bottom: 20px;
+}
+.cellContainer{
+    display: flex;
+    flex-direction: row;
+}

@@ -42,7 +42,7 @@ module.exports = {
                 name: '真功夫'
             },
         ],
-        reduce: [
+        reduces: [
             {
                 thumbnail: 'https://p1.meituan.net/deal/0b96d6009af9c36fe3a901a638412ee769091.jpg%40120w_90h_1e_1c_1l%7Cwatermark%3D1%26%26r%3D1%26p%3D9%26x%3D20%26y%3D20',
                 price: '30.08',

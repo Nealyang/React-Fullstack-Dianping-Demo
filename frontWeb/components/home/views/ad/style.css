@@ -1,0 +1,36 @@
+.container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.singleCell{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom:20px;
+    padding:20px 0;
+    background: #fff;
+    cursor: pointer;
+}
+.leftDiv{
+    flex:2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.name{
+    font-size: 2.4rem;
+    color: #ff7658;
+}
+.subName{
+    font-size: 2rem;
+    color: #c5c2c2;
+}
+.imgStyle{
+
+}
+.rightDiv{
+    flex:1;
+}
+

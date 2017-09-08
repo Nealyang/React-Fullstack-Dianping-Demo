@@ -1,16 +1,18 @@
-import React,{Component,PropTypes} from 'react'
+import React, {Component, PropTypes} from 'react'
+import PureRenderMixin from 'react-addons-pure-render-mixin'
 
-class User extends Component{
-    constructor(props){
-        super(props)
+export default class User extends Component {
+    constructor(props) {
+        super(props);
+        this.shouldComponentUpdate = PureRenderMixin.shouldComponentUpdate.bind(this);
     }
 
-    render(){
-        return(
-            <div>User</div>
+    render() {
+
+        return (
+           <div>
+               User
+           </div>
         )
     }
 }
-
-
-export default User;
