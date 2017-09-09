@@ -1,4 +1,7 @@
 # React技术栈实现XXX电商App-Demo
+
+> 项目地址：https://github.com/Nealyang/React-Fullstack-Dianping-Demo
+
 > 技术栈：react、react-router4.x 、 react-redux 、 webpack3.x、 redux-saga 、 css-module 、 ES6 、babel...
 
 >在慕课网看到相关视频，但是我等屌丝码农真心买不起这个价位的视频。有幸看到源代码，但是看到代码的我。。。也不是很苟同上面代码中react技术栈这一套使用方式。遂自己写了一个demo。
