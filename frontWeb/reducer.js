@@ -9,6 +9,7 @@ import {reducer as user } from './components/user'
 
 export default combineReducers({
     wrap,
-    home
+    home,
+    orderDetail:detail
 });
 

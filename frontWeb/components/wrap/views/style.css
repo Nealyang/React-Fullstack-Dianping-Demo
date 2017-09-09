@@ -1,5 +1,6 @@
 .loadingContainer{
-    position: absolute;
+    position: fixed;
+    top:0;
     z-index: 33;
     height: 100%;
     width: 100%;

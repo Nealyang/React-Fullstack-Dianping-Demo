@@ -1,0 +1,205 @@
+.container{
+    background: #f0f0f0;
+    padding-bottom: 40px;
+}
+.header{
+    height: 132px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.6rem;
+    background: #f0f0f0;
+}
+.backSpan{
+    position: absolute;
+    left: 5px;
+    display: flex;
+    align-items: center;
+    color: #646464;
+}
+.backSpan img{
+    width: 70px;
+}
+.swipeImg{
+    width: 100%;
+}
+.indexDiv{
+    font-size: 1.5rem;
+    position: absolute;
+    right: 15px;
+    top: 50px;
+    background-color: rgba(0,0,0,.4);
+    border-radius: 19px;
+    line-height: 9px;
+    color: #666;
+    padding: 14px 18px 14px;
+    text-align: center;
+}
+.indexDiv>span{
+    color: #fff;
+}
+.imgIntroduce{
+    position: absolute;
+    z-index: 999;
+    bottom: 0;
+    left: 0;
+    padding: 10px 15px;
+    width: 100%;
+    box-sizing: border-box;
+    background: -webkit-gradient(linear,0 0,0 100%,from(rgba(0,0,0,0)),to(rgba(0,0,0,.6)));
+    color: #fff;
+}
+.meiminger{
+    font-size: 2.5rem;
+}
+.int{
+    font-size: 1.9rem;
+}
+.proceDivCon{
+    padding-left: 40px;
+    background: #fff;
+}
+.priceDivTop,.priceDivBottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 120px;
+    border-bottom: solid thin #bbb;
+}
+.priceDivTop span::before{
+    content:'￥'
+}
+.priceDivTop span:first-child{
+    font-size: 4rem;
+    color: #f5734b;
+    text-decoration: none;
+    margin-right: 20px;
+}
+.priceDivTop span{
+    color: #bbb;
+    font-size: 2rem;
+    text-decoration: line-through;
+}
+.priceDivTop div:last-child{
+    background: #ccc;
+    width: 26%;
+    padding: 15px 0;
+    margin-right: 20px;
+    border-radius: 16px;
+    text-align: center;
+    font-size: 2.3rem;
+    color: #fff;
+}
+.priceDivBottom{
+    justify-content: flex-start;
+    border-bottom: none;
+    font-size: 1.8rem;
+    color: #2a2a2a;
+}
+.priceDivBottom img{
+    width: 46px;
+    margin-right: 13px;
+}
+.priceDivBottom span:first-child{
+    margin-right: 30%;
+}
+.notifyDiv{
+    padding-left: 40px;
+    margin: 20px 0;
+    background: #fff;
+    font-size: 2.1rem;
+}
+.notifyDiv p:first-child{
+    color: #999;
+    padding: 25px 0;
+    border-bottom: solid thin #999;
+}
+.notifyDiv p:last-child{
+    color: #808080;
+    padding:30px 0;
+}
+.shouldKnow{
+    background: #fff;
+    padding-left: 40px;
+    font-size: 2.1rem;
+}
+.boradKnow{
+    color: #4a4a4a;
+    padding: 25px 0;
+    border-bottom: solid thin #999;
+}
+.knowCellContainer p{
+    color: #999;
+    padding: 25px 0;
+}
+.boradKnow img{
+    margin-left: 10px;
+}
+.knowCellContainer div{
+    color: #494949;
+    font-size: 2.1rem;
+    padding-bottom: 20px;
+}
+
+.knowCellContainer div:last-child{
+    border-bottom: solid thin #999;
+}
+.getButton{
+    background: #fff;
+    margin:10px 0;
+    padding:20px 0;
+}
+.getButton div{
+    background: #ccc;
+    width: 90%;
+    padding: 23px 0;
+    margin-right: 20px;
+    border-radius: 16px;
+    text-align: center;
+    font-size: 2.3rem;
+    color: #fff;
+    margin-left: 5%;
+}
+.recommendsContainer{
+    padding-left: 40px;
+    font-size: 2.1rem;
+    background: #fff;
+}
+.recommendsContainer p:first-child{
+    color: #383838;
+    padding: 25px 0;
+    border-bottom: solid thin #999;
+}
+.recommendsCell{
+    display: flex;
+    flex-direction: row;
+    padding: 20px 0;
+    border-bottom: solid thin #999;
+}
+.recommendsCell img{
+    width: 30%;
+    height:30%;
+}
+.recommendsCell>div{
+    margin-left: 25px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.recommendsName{
+    font-size: 2.5rem;
+    border:none;
+    color: #333;
+}
+.recommendsExPrice{
+    color: #666;
+    text-decoration: line-through;
+}
+.recommendsPrice{
+    color: #ff7658;
+    font-size: 2.9rem;
+    margin-right: 20px;
+}
+.recommendsCell span::before{
+    content: '￥';
+}

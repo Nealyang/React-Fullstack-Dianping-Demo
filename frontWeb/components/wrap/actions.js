@@ -18,3 +18,10 @@ export function fetchError() {
         type:ActionTypes.FETCH_ERROR
     }
 }
+
+export function getUserLocation(url) {
+    return{
+        type:ActionTypes.GET_USER_LOCATION,
+        url
+    }
+}

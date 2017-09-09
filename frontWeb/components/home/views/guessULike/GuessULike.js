@@ -24,7 +24,7 @@ export default class GuessULike extends Component {
     }
 
     renderListCell(arrs){
-        return arrs.map((item,index)=><ListCell key={index} item={item}/>)
+        return arrs.map((item,index)=><ListCell skipToDetail={this.props.skipToDetail} key={index} item={item}/>)
     }
 }
 

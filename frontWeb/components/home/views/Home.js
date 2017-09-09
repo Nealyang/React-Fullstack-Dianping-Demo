@@ -12,7 +12,8 @@ import GuessULike from "./guessULike/GuessULike";
 class Home extends Component {
     constructor(props) {
         super(props);
-        this.loadMore = this.loadMore.bind(this)
+        this.loadMore = this.loadMore.bind(this);
+        this.skipToLocation = this.skipToLocation.bind(this)
     }
 
     render() {
@@ -25,7 +26,7 @@ class Home extends Component {
                 <Ad ads={ad}/>
                 <CheapOrReducers data={cheap} type={1}/>
                 <CheapOrReducers data={reduces} type={2}/>
-                <GuessULike loadMore={this.loadMore} isLoading={isLoading} data={guessULike}/>
+                <GuessULike skipToDetail={this.skipToLocation} loadMore={this.loadMore} isLoading={isLoading} data={guessULike}/>
             </div>
         )
     }
@@ -33,6 +34,9 @@ class Home extends Component {
     componentDidMount() {
         this.props.getAdData('/api/getAdData');
         this.props.getULikeData('/api/getULikeData');
+    }
+    skipToLocation(id){
+        this.props.history.push(`/detail/${id}`);
     }
     loadMore(){
         this.props.getULikeData('/api/getULikeData');

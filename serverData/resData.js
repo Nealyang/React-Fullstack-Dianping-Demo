@@ -186,19 +186,27 @@ module.exports = {
         }
     ],
     detail: {
-        "code": 200,
-        "dealGroupShop": {
-            "address": "上顿渡龙津路125号",
-            "branchName": "上顿渡店",
-            "businessHours": "周一至周日 09:00-24:00",
-            "cityId": 143,
-            "distance": ">100km",
-            "phoneNo": "18379450044",
-            "shopId": 24328593,
-            "shopName": "正新鸡排(上顿渡店)",
-            "shopPower": 40
-        },
-        "msg": "请求成功",
-        "totalShopNum": 1
+        imgs:[
+            'https://p0.meituan.net/deal/22a8fa02b961a350139f122389f73e5f117067.jpg%40450w_280h_1e_1c_1l%7Cwatermark%3D1%26%26r%3D1%26p%3D9%26x%3D2%26y%3D2%26relative%3D1%26o%3D20',
+            'https://p1.meituan.net/deal/dd1b6b64a0061a3fd4fc04004cf9127b296845.jpg%40450w_280h_1e_1c_1l%7Cwatermark%3D1%26%26r%3D1%26p%3D9%26x%3D2%26y%3D2%26relative%3D1%26o%3D20',
+            'https://p1.meituan.net/deal/54008a2e6143af277590dfc3183fc01d31147.jpg%40450w_280h_1e_1c_1l%7Cwatermark%3D1%26%26r%3D1%26p%3D9%26x%3D2%26y%3D2%26relative%3D1%26o%3D20',
+            'https://p0.meituan.net/deal/04ed9293e93d49699065bc9e2b634ecc28571.jpg%40450w_280h_1e_1c_1l%7Cwatermark%3D1%26%26r%3D1%26p%3D9%26x%3D2%26y%3D2%26relative%3D1%26o%3D20',
+            'https://p1.meituan.net/deal/d2a8229118b41a64fecad26595555d3425155.jpg%40450w_280h_1e_1c_1l%7Cwatermark%3D1%26%26r%3D1%26p%3D9%26x%3D2%26y%3D2%26relative%3D1%26o%3D20'
+        ],
+        recommends:[
+            {thumbnail:'https://p1.meituan.net/deal/3a5df590599df6a86b803d509df0161b48985.jpg%40450w_280h_1e_1c_1l%7Cwatermark%3D1%26%26r%3D1%26p%3D9%26x%3D2%26y%3D2%26relative%3D1%26o%3D20',name:'伊豆野菜村',price:'158',exPrice:'168'},
+            {thumbnail:'https://p1.meituan.net/deal/91b3517c6cab016fb71a23b98fb56acf56588.jpg%40450w_280h_1e_1c_1l%7Cwatermark%3D1%26%26r%3D1%26p%3D9%26x%3D2%26y%3D2%26relative%3D1%26o%3D20',name:'南京大排档',price:'89',exPrice:'100'},
+            {thumbnail:'https://p0.meituan.net/dpdeal/9bd1b2ce2dbb0f4c5abc99e51e28918e46343.jpg%40450w_280h_1e_1c_1l%7Cwatermark%3D1%26%26r%3D1%26p%3D9%26x%3D2%26y%3D2%26relative%3D1%26o%3D20',name:'伊豆野菜村',price:'49',exPrice:'408'},
+        ],
+        orderDetail:{
+            youxiaoqi:['2017-07-18至2017-09-30'],
+            chuwairiqi:['有效期内周末、法定节假日可用'],
+            shiyongshijian:['团购券使用时间：11:00-21:30'],
+            yuyuetixing:['无需预约，消费高峰时可能需要等位'],
+            guizetixing:['每桌最多使用1张团购券','每张团购券建议2人使用'],
+            baojian:['店内无包间'],
+            tangshiwaidai:['堂食外带均可，可以打包，打包费详情咨询商家'],
+            wenxintishi:['团购用户不可同时享受商家其他优惠','酒水饮料等问题，请致电商家咨询，以商家反馈为准']
+        }
     }
 };

@@ -27,6 +27,7 @@ export default  class HomeHeader extends Component{
             </div>
         )
     }
+
 }
 HomeHeader.propTypes={
     cityName:PropTypes.string

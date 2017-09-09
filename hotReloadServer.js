@@ -6,6 +6,9 @@ let app = express();
 
 app.use('/',require('connect-history-api-fallback')());
 app.use('/',express.static(pathLib.resolve(__dirname,'..','build')));
+app.get('/api/getLocation',function (req,res) {
+    res.status(200).send({cityName:'北京'});
+});
 /**
  * 获取广告数据
  */
@@ -14,6 +17,9 @@ app.get('/api/getAdData',function (req,res) {
 });
 app.get('/api/getULikeData',function (req,res) {
     res.status(200).send(resData.guessULike);
+});
+app.get('/api/orderDetail',function (req,res) {
+    res.status(200).send(resData.detail)
 });
 
 if(process.env.NODE_ENV !== 'production'){//开发环境下

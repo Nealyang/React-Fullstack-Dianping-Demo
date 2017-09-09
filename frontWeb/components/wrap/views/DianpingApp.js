@@ -15,7 +15,7 @@ import {view as User} from '../../user/index'
 import PureRenderMixin from 'react-addons-pure-render-mixin'
 import {bindActionCreators} from 'redux'
 import {connect} from 'react-redux'
-import {updateUserInfo} from '../actions'
+import {updateUserInfo,getUserLocation} from '../actions'
 import './reset.css'
 import style from './style.css'
 
@@ -38,7 +38,7 @@ class DianpingApp extends Component {
                     }
                     <Switch>
                         <Route exact path='/' component={Home}/>
-                        <Route path='/detail' component={Detail}/>
+                        <Route path='/detail/:id' component={Detail}/>
                         <Route path='/city' component={City}/>
                         <Route path='/search' component={Search}/>
                         <Route path='/user' component={User}/>
@@ -51,9 +51,10 @@ class DianpingApp extends Component {
     }
 
     componentDidMount() {
-        this.props.updateUserInfo({
-            cityName: '北京'
-        })
+        //获取地理位置信息
+        this.props.getUserLocation({
+            url:'/api/getLocation'
+        });
     }
 }
 
@@ -65,7 +66,8 @@ function mapStateToProps(state) {
 
 function mapDispatchToProps(dispatch) {
     return {
-        updateUserInfo: bindActionCreators(updateUserInfo, dispatch)
+        updateUserInfo: bindActionCreators(updateUserInfo, dispatch),
+        getUserLocation:bindActionCreators(getUserLocation,dispatch)
     }
 }
 
