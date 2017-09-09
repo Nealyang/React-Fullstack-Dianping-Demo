@@ -17,10 +17,10 @@ class Home extends Component {
     }
 
     render() {
-        const {userInfo,ad,cheap,reduces,guessULike,isLoading} = this.props;
+        const {userInfo,ad,cheap,reduces,guessULike,isLoading,history} = this.props;
         return (
             <div className={style.home}>
-                <HomeHeader cityName={userInfo.cityName}/>
+                <HomeHeader history={history} cityName={userInfo.cityName}/>
                 <Category/>
                 <div style={{marginTop:'20px'}}/>
                 <Ad ads={ad}/>

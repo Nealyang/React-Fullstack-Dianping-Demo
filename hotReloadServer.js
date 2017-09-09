@@ -21,6 +21,9 @@ app.get('/api/getULikeData',function (req,res) {
 app.get('/api/orderDetail',function (req,res) {
     res.status(200).send(resData.detail)
 });
+app.get('/api/cities',function (req,res) {
+    res.status(200).send(resData.cities)
+});
 
 if(process.env.NODE_ENV !== 'production'){//开发环境下
     const webpack = require('webpack');

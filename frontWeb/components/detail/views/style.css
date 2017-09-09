@@ -1,6 +1,6 @@
 .container{
     background: #f0f0f0;
-    padding-bottom: 40px;
+    padding-bottom: 200px;
 }
 .header{
     height: 132px;
@@ -144,12 +144,12 @@
 .knowCellContainer div:last-child{
     border-bottom: solid thin #999;
 }
-.getButton{
+.getButton,.bottomButton{
     background: #fff;
     margin:10px 0;
     padding:20px 0;
 }
-.getButton div{
+.getButton div,.bottomButton div{
     background: #ccc;
     width: 90%;
     padding: 23px 0;
@@ -202,4 +202,14 @@
 }
 .recommendsCell span::before{
     content: '￥';
+}
+
+.bottomButton div{
+    background: #f63;
+}
+.bottomButton{
+    position: fixed;
+    bottom:0;
+    width: 100%;
+    margin:0;
 }

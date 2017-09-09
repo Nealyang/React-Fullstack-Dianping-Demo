@@ -1,11 +1,9 @@
 import {put,call,take} from 'redux-saga/effects'
 import * as wrapActionTypes from './actionTypes'
-import {delay} from 'redux-saga'
 
 import {get} from '../../fetchApi/get'
 
 export function* getLocation (url) {
-    yield delay(2000);
     yield put({type:wrapActionTypes.START_FETCH});
     try {
         return yield call(get,url)

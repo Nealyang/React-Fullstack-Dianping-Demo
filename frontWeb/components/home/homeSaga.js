@@ -5,7 +5,7 @@ import * as homeActionTypes from './actionTypes'
 import * as wrapActionTypes from '../wrap/actionTypes'
 
 //故意的
-const delayTime = 2000;
+const delayTime = 0;
 
 
 export function* getAdData(url) {

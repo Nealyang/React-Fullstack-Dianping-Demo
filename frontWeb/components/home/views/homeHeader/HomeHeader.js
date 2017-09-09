@@ -12,10 +12,10 @@ export default  class HomeHeader extends Component{
     }
 
     render(){
-        const {cityName} = this.props;
+        const {cityName,history} = this.props;
         return(
             <div className={style.homeHeaderContainer}>
-                <div>
+                <div onClick={()=>history.push('/city')}>
                     <span>{cityName}</span>
                     <img className={style.arrowDown} src={arrowDown}/>
                 </div>

@@ -96,6 +96,14 @@ class Detail extends Component {
                         })
                     }
                 </div>
+
+                <div className={style.bottomButton}>
+                    <div>
+                        <a style={{color:'#fff'}} href="http://evt.dianping.com/synthesislink/5237.html?dealid=25587220">
+                            APP下单返积分抵现金
+                        </a>
+                    </div>
+                </div>
             </div>
         )
     }
