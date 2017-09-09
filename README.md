@@ -18,6 +18,11 @@ React技术栈：398240621
 
 ## 项目截图
 
+* 加载
+
+
+![loading](./record/loading.jpg)
+
 * 首页
 
 ![首页](./record/home_1.jpg)
@@ -67,6 +72,7 @@ React技术栈：398240621
 - [x] react-router 浏览器传参、获取 
 - [x] redux-saga辅助
 - [x] 上拉加载更多
+- [x] 全局监控Loading
 - [x] ......
 
 - [ ] Universal渲染 [可参考我另一个项目webpack1.x](https://github.com/Nealyang/neal-teach-website/blob/master/record/framework.md)
