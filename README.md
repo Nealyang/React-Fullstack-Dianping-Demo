@@ -83,6 +83,6 @@ React技术栈：398240621
 
 ## more
 
-后续会继续改进技术，如果有时间会写一个全栈的demo，着重后端Node和mongo的使用。前端依旧使用react技术栈完成。
+后续会继续改进技术，如果有时间会写一个[全栈的demo](https://github.com/Nealyang/React-Express-Blog-Demo)，着重后端Node和mongo的使用。前端依旧使用react技术栈完成。
 
 喜欢的朋友欢迎star (^人^) ，后续会整理更多demo。 (^_^)/~~ 
