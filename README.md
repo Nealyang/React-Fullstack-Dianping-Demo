@@ -17,23 +17,23 @@ React技术栈：398240621
 
 * 首页
 
-![首页](./record/home_1.png)
+![首页](./record/home_1.jpg)
 
 
 
-![首页](./record/home_2.png)
+![首页](./record/home_2.jpg)
 
 * 详情页
 
 
-![detail](./record/detail_1.png)
+![detail](./record/detail_1.jpg)
 
 
-![detail](./record/detail_2.png)
+![detail](./record/detail_2.jpg)
 
 * 城市选择
 
-![city](./record/city.png)
+![city](./record/city.jpg)
 
 ## 项目运行展示(gif)
 > 流量党慎入
