@@ -1,4 +1,4 @@
-# React技术栈编写XXX电商App-Demo
+# React技术栈实现XXX电商App-Demo
 > 技术栈：react、react-router4.x 、 react-redux 、 webpack3.x、 redux-saga 、 css-module 、 ES6 、babel...
 
 >在慕课网看到相关视频，但是我等屌丝码农真心买不起这个价位的视频。有幸看到源代码，但是看到代码的我。。。也不是很苟同上面代码中react技术栈这一套使用方式。遂自己写了一个demo。
@@ -85,4 +85,4 @@ React技术栈：398240621
 
 后续会继续改进技术，如果有时间会写一个[全栈的demo](https://github.com/Nealyang/React-Express-Blog-Demo)，着重后端Node和mongo的使用。前端依旧使用react技术栈完成。
 
-喜欢的朋友欢迎star (^人^) ，后续会整理更多demo。 (^_^)/~~ 
+ (^_^)/~~ 
