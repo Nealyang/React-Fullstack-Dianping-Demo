@@ -1,2 +1,19 @@
-# React技术栈重构 Dianping App
-> react react-router4.x redux webpack2.x
+# React技术栈编写XXX电商App-Demo
+> 技术栈：react、react-router4.x 、 react-redux 、 webpack3.x、 redux-saga
+
+> 在慕课网看到相关视频，但是我等屌丝码农真心买不起这个价位的视频。有幸看到源代码，但是看到代码的我。。。也不是很苟同上面代码的react技术栈的一套使用方式。开发react-redux这一套，我个人的理解是 ***Redux体现的是代码分层、职责分离的编程思想,逻辑与视图严格区分。*** 而慕课网上的这一套代码，逻辑都写到了view组件层，组件需要关心如何获取数据，如何处理数据，这样的组件层是不容易复用的，Redux的使用也是残缺的。甚至这种情况，你不用Redux，直接定义一个全局的state变量，所有组件都来直接操作它好了。遂自己写了一个demo。
+
+---
+
+一同学习react、node的同学欢迎加入：
+
+Node.js技术交流群：209530601 
+
+React技术栈：398240621
+
+---
+
+
+
+
+
