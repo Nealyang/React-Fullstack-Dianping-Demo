@@ -1,5 +1,5 @@
 # React技术栈编写XXX电商App-Demo
-> 技术栈：react、react-router4.x 、 react-redux 、 webpack3.x、 redux-saga
+> 技术栈：react、react-router4.x 、 react-redux 、 webpack3.x、 redux-saga 、 css-module 、 ES6 、babel...
 
 >在慕课网看到相关视频，但是我等屌丝码农真心买不起这个价位的视频。有幸看到源代码，但是看到代码的我。。。也不是很苟同上面代码中react技术栈这一套使用方式。遂自己写了一个demo。
 
@@ -19,10 +19,16 @@ React技术栈：398240621
 
 ![首页](./record/home_1.png)
 
+
+
 ![首页](./record/home_2.png)
 
 * 详情页
+
+
 ![detail](./record/detail_1.png)
+
+
 ![detail](./record/detail_2.png)
 
 * 城市选择
@@ -50,8 +56,33 @@ React技术栈：398240621
 
 * 项目还有许多需要完善的地方，redux-saga的使用方式、项目结构、包括webpack3.x配合react的代码优化以及react的Universal渲染甚至后端Node的代码编写。欢迎各路大神前来指教~
 
+## 项目实现
+
+- [x] react热更新 
+- [x] css-module使用 
+- [x] react-redux异步处理 
+- [x] react-router 浏览器传参、获取 
+- [x] redux-saga辅助
+- [x] 上拉加载更多
+- [x] ......
+
+- [ ] Universal渲染 [可参考我另一个项目webpack1.x](https://github.com/Nealyang/neal-teach-website/blob/master/record/framework.md)
+
+## 安装步骤
+    
+    # clone this demo 
+    git clone ...
+    
+    # install dependencies
+    npm i (or yarn)
+    
+    # serve with hot reload at localhost:8000
+    npm start
 
 
 
+## more
 
+后续会继续改进技术，如果有时间会写一个全栈的demo，着重后端Node和mongo的使用。前端依旧使用react技术栈完成。
 
+喜欢的朋友欢迎star (^人^) ，后续会整理更多demo。 (^_^)/~~ 
