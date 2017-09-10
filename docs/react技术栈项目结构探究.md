@@ -34,4 +34,4 @@
 ### 按照功能划分
 按照功能模块划分其实就是目前我这个项目所用到的。当然，此项目目录结构真的不咋滴。乱七八糟。
 
-framework.png
+![项目结构](https://github.com/Nealyang/React-Fullstack-Dianping-Demo/blob/master/record/framework.png)
