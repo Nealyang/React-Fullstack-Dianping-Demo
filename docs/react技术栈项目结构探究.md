@@ -179,3 +179,5 @@ github上这么介绍的：A proposal for bundling reducers, action types and ac
     
 这样，我们在container中使用actions时，可以通过import { actions } from 'path/to/module.js'引入，
 避免了引入额外的对象，也避免了import时把所有action都列出来的繁琐。
+
+**[下一个项目]((https://github.com/Nealyang/React-Express-Blog-Demo))将会采用第三种方式去组织代码**
