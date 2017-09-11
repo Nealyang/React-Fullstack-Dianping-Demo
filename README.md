@@ -56,7 +56,7 @@ React技术栈：398240621
 
 - [x] [react技术栈项目结构探究](./docs/react技术栈项目结构探究.md)
 - [x] [redux-saga初体验](./docs/redux-saga初体验.md)
-- [ ] [关于项目中webpack的配置说明](./docs/关于项目中的webpack使用.md)
+- [x] [关于项目中webpack的配置说明](./docs/关于项目中的webpack使用.md)
 
 ## 项目简单说明
 

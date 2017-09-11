@@ -14,7 +14,7 @@ module.exports = {
             'webpack-hot-middleware/client?path=http://localhost:8000/__webpack_hmr',
             pathLib.resolve(__dirname,'frontWeb', 'index.js')
         ],
-        vendor: ['react','react-dom','react-router-dom']
+        vendor: ['react','react-dom','react-router-dom','redux','react-redux','redux-saga','swipe-js-iso','react-swipe','react-addons-pure-render-mixin']
     },
     output: {
         path: pathLib.resolve(__dirname, 'build'),
@@ -79,7 +79,7 @@ module.exports = {
         new webpack.HotModuleReplacementPlugin(),
         new webpack.NoEmitOnErrorsPlugin(),//保证出错时页面不阻塞，且会在编译结束后报错
         new ExtractText({
-            filename:'bundle.[contenthash].css',
+            filename:'bundle.[hash].css',
             disable:false,
             allChunks:true
         }),
