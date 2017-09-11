@@ -5,6 +5,9 @@
 
 >[项目地址](https://github.com/Nealyang/React-Fullstack-Dianping-Demo)
 
+## 项目截图
+![首页](https://github.com/Nealyang/React-Fullstack-Dianping-Demo/blob/master/record/home_1.jpg)
+
 ## React+Redux项目结构探索
 整理学习react技术栈相关知识，在写了一个[电商AppDemo](https://github.com/Nealyang/React-Fullstack-Dianping-Demo)后，开始思考起该如何高效的组织react项目的项目结构。
 
