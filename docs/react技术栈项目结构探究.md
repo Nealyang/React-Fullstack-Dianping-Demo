@@ -1,9 +1,10 @@
-# React技术栈实现大众点评Demo项目结构探究
+# React技术栈实现大众点评Demo-项目结构探究
 
 > [参考链接1](http://www.jianshu.com/p/7de6ccb7b76d?hmsr=toutiao.io&utm_medium=toutiao.io&utm_source=toutiao.io)
 > [参考链接2](https://segmentfault.com/a/1190000010951171)
 
 >[项目地址](https://github.com/Nealyang/React-Fullstack-Dianping-Demo)
+
 
 ## 项目截图
 ![首页](https://github.com/Nealyang/React-Fullstack-Dianping-Demo/blob/master/record/home_1.jpg)
@@ -186,3 +187,10 @@ github上这么介绍的：A proposal for bundling reducers, action types and ac
 避免了引入额外的对象，也避免了import时把所有action都列出来的繁琐。
 
 **[下一个项目]((https://github.com/Nealyang/React-Express-Blog-Demo))将会采用第三种方式去组织代码**
+
+## 交流
+
+Node.js技术交流群：209530601 
+
+React技术栈：398240621
+
