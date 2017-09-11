@@ -1,7 +1,9 @@
-# React技术栈项目结构探究
+# React技术栈实现大众点评Demo项目结构探究
 
 > [参考链接1](http://www.jianshu.com/p/7de6ccb7b76d?hmsr=toutiao.io&utm_medium=toutiao.io&utm_source=toutiao.io)
 > [参考链接2](https://segmentfault.com/a/1190000010951171)
+
+>[项目地址](https://github.com/Nealyang/React-Fullstack-Dianping-Demo)
 
 ## React+Redux项目结构探索
 整理学习react技术栈相关知识，在写了一个[电商AppDemo](https://github.com/Nealyang/React-Fullstack-Dianping-Demo)后，开始思考起该如何高效的组织react项目的项目结构。
