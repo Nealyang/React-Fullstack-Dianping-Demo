@@ -2,6 +2,7 @@
 
 > [参考链接1](http://www.jianshu.com/p/7de6ccb7b76d?hmsr=toutiao.io&utm_medium=toutiao.io&utm_source=toutiao.io)
 > [参考链接2](https://segmentfault.com/a/1190000010951171)
+> [参考链接3](https://marmelab.com/blog/2015/12/17/react-directory-structure.html)
 
 >[项目地址](https://github.com/Nealyang/React-Fullstack-Dianping-Demo)
 
