@@ -58,7 +58,7 @@ module.exports = {
     plugins: [
         new CleanPlugin(['build']),
         new webpack.DefinePlugin({
-            "progress.env.NODE_ENV":JSON.stringify('development')
+            "progress.env.NODE_ENV":JSON.stringify('production')
         }),
         new HtmlWebpackPlugin({
             title: "My app",
