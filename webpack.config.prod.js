@@ -7,7 +7,7 @@ const CleanPlugin = require('clean-webpack-plugin');
 module.exports = {
     entry: {
         index: [
-            pathLib.resolve(__dirname, 'app', 'index.js')
+            pathLib.resolve(__dirname, 'frontWeb', 'index.js')
         ],
         vendor: ['react','react-dom','react-router-dom']
     },
