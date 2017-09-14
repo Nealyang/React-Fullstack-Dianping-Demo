@@ -89,7 +89,7 @@ module.exports = {
     ],
     output: {
         path: pathLib.resolve(__dirname, 'build'),
-        publicPath: "/",
+        publicPath: "./",
         filename: '[name].[chunkhash].js'
     },
     resolve: {
