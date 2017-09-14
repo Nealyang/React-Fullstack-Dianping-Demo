@@ -9,7 +9,7 @@
     "start-hot-server": "node  ./hotReloadServer.js",
     "dev": "npm run build-client:dev & npm run start-hot-server ",
     "prod": "npm run build-client:prod",
-    "start": "npm run dev",
+    "start": "node  ./hotReloadServer.js",
     "build": "npm run prod"
   },
   "repository": "git+https://github.com/Nealyang/React-Fullstack-Dianping-Demo.git",
