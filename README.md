@@ -46,9 +46,9 @@ React技术栈：398240621
 ## 项目运行展示(gif)
 > 流量党慎入
 
-[app运行展示](https://github.com/Nealyang/React-Fullstack-Dianping-Demo/blob/master/record/play.gif)
+![app运行展示](https://github.com/Nealyang/React-Fullstack-Dianping-Demo/blob/master/record/play.gif)
 
-[state树变化](https://github.com/Nealyang/React-Fullstack-Dianping-Demo/blob/master/record/state_tree.gif)
+![state树变化](https://github.com/Nealyang/React-Fullstack-Dianping-Demo/blob/master/record/state_tree.gif)
 
 ***项目内容不多，就涉及到三个页面，主要是为了学习新的知识。项目中用的redux-saga也是前天才学习的。项目的架构也是最近在各种探讨研究。还求大神多指点~***
 
