@@ -16,6 +16,12 @@ React技术栈：398240621
 
 ---
 
+### 微信公众号
+
+![img](https://github.com/Nealyang/PersonalBlog/blob/master/img/wx.jpg)
+
+> 扫码关注微信公众号，获取第一手文章推送
+
 ## 项目截图
 
 * 加载
