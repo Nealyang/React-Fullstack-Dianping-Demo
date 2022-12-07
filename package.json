@@ -27,7 +27,7 @@
   "homepage": "https://github.com/Nealyang/React-Fullstack-Dianping-Demo#readme",
   "dependencies": {
     "axios": "^0.16.2",
-    "express": "^4.15.4",
+    "express": "^4.17.3",
     "react": "^15.6.1",
     "react-addons-perf": "^15.4.2",
     "react-addons-pure-render-mixin": "^15.6.0",
